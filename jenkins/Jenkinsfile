@@ -21,10 +21,31 @@ pipeline {
                 sh './jenkins/scripts/deliver.sh'
             }
         }
-        stage('Complete') {
+        stage('Complete-1') {
             steps {
-                echo 'Job Complete!'
+                echo 'Job Complete-1!'
             }
         }
+                stage('Complete-2') {
+            steps {
+                echo 'Job Complete-2!'
+            }
+        }
+                        stage('Complete-3') {
+            steps {
+                echo 'Job Complete-3!'
+            }
+        }
+                        stage('Complete-4') {
+            steps {
+                echo 'Job Complete-4!'
+            }
+        }
+                                stage('Complete-5') {
+            steps {
+                echo 'Job Complete-5!'
+            }
+        }
+        
     }
 }
